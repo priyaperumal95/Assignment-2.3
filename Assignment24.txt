@@ -1,0 +1,13 @@
+1. Importance of Name node in Hadoop cluster:
+
+     * Name node is the root directory os an HDFS system. It keeps the directory tree of all file in the file system. So that name noe is the important in the hadoop system.
+
+     * when the client application want to add/copy/move/delete a file they contact with the namenode and the name node successfully returns the corresponding datanodes list.
+
+     * The name node is a Single Point of Failure. when the name node goes down, the file system goes offline.
+
+     * If there is more than one name node directory in the configuration, then multiple copies of the meta data will be stored.As long as the directories are in the seperate disk, a single disk failure will not corrupt the meta-data. 
+
+     * The name node is the root node of all the data nodes and it monitors the overall system in HDFS.
+
+     * The name node manages and give instructions to the data nodes to do the work. The name node is like a overall coordinator of the hadoop cluster.
